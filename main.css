@@ -60,6 +60,18 @@ main .card {
   border-radius: 8px;
   box-shadow: 0 15px 15px #dee6ed;
 }
+.supervisor {
+  background: linear-gradient(to bottom, hsl(180, 62%, 55%) 4px, white 4px);
+}
+.team-builder {
+  background: linear-gradient(to bottom, hsl(0, 78%, 62%) 4px, white 4px);
+}
+.karma {
+  background: linear-gradient(to bottom, hsl(34, 97%, 64%) 4px, white 4px);
+}
+.calculator {
+  background: linear-gradient(to bottom, hsl(212, 86%, 64%) 4px, white 4px);
+}
 main .card h3 {
   font-size: 20px;
   font-weight: 600;
