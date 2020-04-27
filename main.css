@@ -1,19 +1,18 @@
 html {
-  width: 1440px;
   font-family: 'Poppins', sans;
   Font size: 15px;
   background-color: hsl(0, 0%, 98%);
   color: hsl(229, 6%, 66%);
 }
-@media screen and (max-width: 1439px) {
-  html {
-    width: 100%;
-  }
-}
 h1, h2, h3 {
   color: hsl(234, 12%, 34%);
 }
+h1, h2 {
+  text-align: center;
+}
 body {
+  margin: 0 auto;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,12 +40,32 @@ header p {
   line-height: 24px;
   text-align: center;
 }
+@media screen and (max-width: 1160px) {
+  header {
+    width: 350px;
+  }
+  header h1, header h2 {
+    font-size: 25px;
+  }
+  header p {
+    margin-top: 20px;
+    width: 315px;
+  }
+}
 main {
   display: flex;
   margin-top: 65px;
   width: 1110px;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 1160px) {
+   main {
+    flex-direction: column;
+    width: 100%;
+    height: 975px;
+    justify-content: space-between;
+  }
 }
 main .card {
   display: flex;
@@ -60,6 +79,13 @@ main .card {
   border-radius: 8px;
   box-shadow: 0 15px 15px #dee6ed;
 }
+@media screen and (max-width: 1160px) {
+  main .card {
+    width: 315px;
+    height: 225px;
+  }
+}
+/*gradient used instead of border to better replicate design*/
 .supervisor {
   background: linear-gradient(to bottom, hsl(180, 62%, 55%) 4px, white 4px);
 }
@@ -85,11 +111,21 @@ main .card p {
 main .card img {
   align-self: flex-end;
 }
+@media screen and (max-width: 1160px) {
+  main .card img {
+    height: 60px;
+  }
+}
 main .two-cards {
   display: flex;
   flex-direction: column;
   height: 525px;
   justify-content: space-between;
+}
+@media screen and (max-width: 1160px) {
+  main .two-cards {
+    height: 475px;
+  }
 }
 .attribution {
   margin-top: 30px;
